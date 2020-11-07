@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(329.54deg, #29b6b1 0%, #00c7c7 100%) no-repeat;
+    position: relative
+}
+
+.wrapper-content {
+    background-color: white;
+    box-shadow: 17.2868px 27.65px 41.48px rgba(23, 142, 166, 0.8);
+    width: 80%;
+    min-height: 500px;
+    min-width: 700px;
+    position: absolute;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;                                                      
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 20px;
+    font-size: 35px;
+    color:  #29b6b1;
+}
+
+.text-input {
+    border: 2px solid #29b6b1;
+    width: 98%;
+    height: 70%;
+    min-height: 300px;
+    margin: auto;
+    overflow-y: auto;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.text-input:empty:not(:focus):before{
+    display: inline-block;
+    padding-top: 140px;
+    content:attr(data-text); 
+}
+
+.button-speak,
+.button-stop {
+    padding: 20px 40px 20px 40px;
+    margin: 5px;
+    background-color:#29b6b1;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 200ms linear, scale 500ms linear;
+}
+
+.button-stop {
+    background-color: #4d6f80;
+}
+
+.button-speak:hover,
+.button-speak:focus,
+.button-speak:active {
+    background-color: #00c7c7;
+    transform: scale(0.95);
+}
+
+.button-stop:hover,
+.button-stop:focus,
+.button-stop:active {
+    background-color: #5c8599;
+    transform: scale(0.95);
+}

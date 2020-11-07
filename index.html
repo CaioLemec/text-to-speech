@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Leitor de textos</title>
+</head>
+
+<body>
+    <div class="wrapper-content">
+        <h1>Text to Speech</h1>
+        <div 
+        class="text-input" 
+        contenteditable oninput="setText(event)"
+        data-text="Type, paste, and edit text here."></div>
+        <div class="buttons">
+            <button class="button-speak" onclick="speak()">Start</button>
+            <button class="button-stop" onclick="stop()">Stop</button>
+        </div>
+    </div>
+</body>
+    <script src="./index.js"></script>
+</html>
